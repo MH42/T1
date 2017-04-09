@@ -7,25 +7,25 @@ auch, welche Unterverzeichnisse und welche Dateien unter Versionskontrolle stehe
 Subveron müssen damit keine weiteren `.svn`-Dateien in Unterverzeichnissen angelegt werden.
 
 ## Mögliche Zustände eines Verzeichnisses/einer Datei in Git [1]:
-*untracked: Alle Verzeichnisse und Dateien, die ausgehend vom `.git`-Verzeichnis im gleichen Verzeichnis oder tiefer liegen, sind bekannt 
+* untracked: Alle Verzeichnisse und Dateien, die ausgehend vom `.git`-Verzeichnis im gleichen Verzeichnis oder tiefer liegen, sind bekannt 
 aber noch nicht erfasst (not recorded). Sie stehen also noch nicht unter Versionskontrolle. Sie müssen dem Repository einmalig hinzugefügt 
 werden ("Add" und anschließend "Commit", in Eclipse: "Team" -> "Add" und "Team" -> "Commit").
-*added: Alle Verzeichnisse/Dateien, die in Git bekannt sind, aber noch nicht committed wurden. Sie sind also (immer) noch nicht gesichert, 
+* added: Alle Verzeichnisse/Dateien, die in Git bekannt sind, aber noch nicht committed wurden. Sie sind also (immer) noch nicht gesichert, 
 sondern lediglich dem Index (mehr Infos dazu siehe unten) hinzugefügt. Um sie endgültig unter Versionskontrolle zu bringen, ist ein Commit 
 erforderlich (In Eclipse: "Team" -> "Commit")
-*tracked: Alle Verzeichnisse/Dateien, die bekannt und zum Repository hinzugefügt wurden (recorded).
-*dirty: Jede getrackte Datei mit Änderungen, aber noch nicht dem Index hinzugefügt wurde. Die Änderungen sind also ungesichert. Um dies 
+* tracked: Alle Verzeichnisse/Dateien, die bekannt und zum Repository hinzugefügt wurden (recorded).
+* dirty: Jede getrackte Datei mit Änderungen, aber noch nicht dem Index hinzugefügt wurde. Die Änderungen sind also ungesichert. Um dies 
 zu ändern, müssen sie gestaged werden. (In Eclipse: "Team" -> "Add to Index")
-*staged: Jede getrackte Datei mit Änderungen, die bereits zum Index hinzugefügt wurden.
-*partially-staged: Jede getrackte Datei mit Änderungen, die bereits teilweise zum Index hinzugefügt wurden. Üblicherweise entsteht dies, 
+* staged: Jede getrackte Datei mit Änderungen, die bereits zum Index hinzugefügt wurden.
+* partially-staged: Jede getrackte Datei mit Änderungen, die bereits teilweise zum Index hinzugefügt wurden. Üblicherweise entsteht dies, 
 wenn eine Datei verändert, anschließend zum Index hinzugefügt und danach noch einmal verändert wird. Es ist also wieder ein "Add to Index" 
 erforderlich.
-*conflicted: Alle Dateien, deren Änderungen nach einem Merge in Konflikt mit anderen Änderungen stehen. Diese Konflikte müssen von Hand 
+* conflicted: Alle Dateien, deren Änderungen nach einem Merge in Konflikt mit anderen Änderungen stehen. Diese Konflikte müssen von Hand 
 aufgelöst werden (in Eclipse: "Team" -> "Merge Tool"), weil Git nicht ermitteln kann welche der Versionen die korrekte ist. Über die 
 History (Eclipse: "Team" -> "Show in History") kann ermittelt werden, von wem die anderen Änderungen stammen um ggf. Rücksprache zu halten. 
 Nach Auflösen des Konflikts kann die Datei dem Index hinzugefügt werden. Damit wird sie nicht mehr als "conflicted" markiert sondern als 
 "staged". Ein Commit fügt die gemergte Datei dem Repository hinzu.
-*ignored: Manche Verzeichnisse/Dateien sollen nicht zum Repository hinzugefügt werden (Beispiel: `bin`-Verzeichnis von Eclipse). Diese 
+* ignored: Manche Verzeichnisse/Dateien sollen nicht zum Repository hinzugefügt werden (Beispiel: `bin`-Verzeichnis von Eclipse). Diese 
 Dateien können von der Versionskontrolle ausgeschlossen werden. Sie werden dazu in einer separaten Datei `.gitignore` gelistet und von Git 
 als nicht existent behandelt. (In Eclipse: "Team" -> "Ignore")
 
@@ -38,28 +38,28 @@ werden. Die veränderte Datei kann mit der gestagten Datei verglichen werden, oh
 wieder auf den Stand der gestagten Datei zurückgesetzt werden. Ebenso kann der Index zurückgesetzt werden.
 
 File-Menü-Übersicht in Eclipse [3]
-*Add to Index:
+* Add to Index:
 Hinzufügen von Dateien zum Git Index.
 „Team“ –> „Add to Index“
-*Commit:
+* Commit:
 Erzeugen eines neuen Commits.
 „Team“ -> „Commit...“
-*Ignore:
+* Ignore:
 Ausschließen einer Datei von der Versionskontrolle durch Hinzufügen zur .gitignore-Datei.
 „Team“ -> „Ignore“
-*Pull:
+* Pull:
 Änderungen vom remote Repository ins lokale Repository auschecken. Entspricht der Kombination aus „Fetch“ und „Merge“ mit teilweise etwas zusätzlicher „Magie“. Das Ausführend eines Fetch-Commands und eines anschließendes Merge-Commands ist leichter nachvollziehbar.
 „Team“ -> „Pull“
-*Fetch:
+* Fetch:
 Update der Branches im remote Repository.
 „Team“ –> „Fetch from Upstream“
-*Switch:
+* Switch:
 Erzeugen eines neuen Branchs oder wechseln zu einem anderen, bereits existierenden Branch
 „Team“ -> „Switch To“
-*Push:
+* Push:
 Übertragen der Änderungen/Commits aus dem lokalen Repository ins remote Repository.
 „Team“ -> „Push to Upstream“
-*Merge:
+* Merge:
 Mergen zweier Branches, um Dateiänderungen aus einem Branch in einen anderen Branch zu übertragen.
 „Team“ -> „Merge...“
 Zusammenführen von unterschiedlichen Versionen einer Datei, die in Konflikt zueinander stehen.
@@ -98,8 +98,8 @@ Falls es sich bei dem Defect um einen Hotfix handelt, muss der Branch in 2. vom 
 
 
 ## Quellen:
-[1] Maximilian Koegel und Jonas Helming: EGit Tutorial. http://eclipsesource.com/blogs/tutorials/egit-tutorial/. Feb 19th, 2015. 
-[Stand: 03.04.2017]
-[2] Scott Chacon and Ben Straub: Pro Git. Apress 2014, 2nd Edition. 
-[3] Lars Vogel: Git version control with Eclipse (EGit) - Tutorial. http://www.vogella.com/tutorials/EclipseGit/article.html. 06.07.2016. 
-[Stand: 03.04.2017]
+   [1] Maximilian Koegel und Jonas Helming: EGit Tutorial. http://eclipsesource.com/blogs/tutorials/egit-tutorial/. Feb 19th, 2015. 
+[Stand: 03.04.2017]   
+   [2] Scott Chacon and Ben Straub: Pro Git. Apress 2014, 2nd Edition.   
+   [3] Lars Vogel: Git version control with Eclipse (EGit) - Tutorial. http://www.vogella.com/tutorials/EclipseGit/article.html. 06.07.2016. 
+[Stand: 03.04.2017]   
