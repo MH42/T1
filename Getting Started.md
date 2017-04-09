@@ -7,6 +7,7 @@ auch, welche Unterverzeichnisse und welche Dateien unter Versionskontrolle stehe
 Subveron müssen damit keine weiteren `.svn`-Dateien in Unterverzeichnissen angelegt werden.
 
 ## Mögliche Zustände eines Verzeichnisses/einer Datei in Git [1]:
+![untracked](images/untracked.png)
 * untracked: Alle Verzeichnisse und Dateien, die ausgehend vom `.git`-Verzeichnis im gleichen Verzeichnis oder tiefer liegen, sind bekannt 
 aber noch nicht erfasst (not recorded). Sie stehen also noch nicht unter Versionskontrolle. Sie müssen dem Repository einmalig hinzugefügt 
 werden ("Add" und anschließend "Commit", in Eclipse: "Team" -> "Add" und "Team" -> "Commit").
