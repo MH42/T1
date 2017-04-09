@@ -33,8 +33,9 @@ History (Eclipse: "Team" -> "Show in History") kann ermittelt werden, von wem di
 Nach Auflösen des Konflikts kann die Datei dem Index hinzugefügt werden. Damit wird sie nicht mehr als "conflicted" markiert sondern als 
 "staged". Ein Commit fügt die gemergte Datei dem Repository hinzu.
 * ![removed](removed.png) removed:
-Verzeichnisse/Dateien, die aus dem Repository entfernt werden sollen. Hierfür gibt es zwei Möglichkeiten: 1. In Eclipse: "Team" -> "Untrack" 2. Löschen der aus dem Eclipse-Workspace (einfach Datei über Tastatur oder Kontextmenü entfernen). Hier erscheint das Icon jedoch nicht da die Datei nicht mehr im Workspace existiert. Beim nächsten Commit wird die jeweilige Datei aber dennoch gelöscht. Dies ist auch in der Staging-Area in der Eclipse-Staging-View einzusehen.
-Any file that should be removed from the repository. For this icon to appear Team => Untrack has to be performed. By deleting the file from the workspace, the file will disappear (and therefore no icon will appear). However, it will still be removed from the repository with the next commit.
+Verzeichnisse/Dateien, die aus dem Repository entfernt werden sollen. Hierfür gibt es zwei Möglichkeiten: 
+   1. In Eclipse: "Team" -> "Untrack" 
+   2. Löschen der aus dem Eclipse-Workspace (einfach Datei über Tastatur oder Kontextmenü entfernen). Hier erscheint das Icon jedoch nicht da die Datei nicht mehr im Workspace existiert. Beim nächsten Commit wird die jeweilige Datei aber dennoch gelöscht. Dies ist auch in der Staging-Area in der Eclipse-Staging-View einzusehen.
 * ![ignored](ignored.png) ignored: 
 Manche Verzeichnisse/Dateien sollen nicht zum Repository hinzugefügt werden (Beispiel: `bin`-Verzeichnis von Eclipse). Diese 
 Dateien können von der Versionskontrolle ausgeschlossen werden. Sie werden dazu in einer separaten Datei `.gitignore` gelistet und von Git 
