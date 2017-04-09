@@ -3,7 +3,7 @@
 ## Repository
 Beim Anlegen eines neuen Repositories wird ein Verzeichnis `.git` erzeugt. Alle Verzeichnisse und Dateien, die im gleichen Verzeichnis oder 
 tiefer liegen, können dem Git-Repository hizugefügt werden. Im `.git`-Verzeichnis werden alle erforderlichen Dateien abgelegt. Dazu gehört 
-auch, welche Unterverzeichnisse und welche Dateien unter Versionskontrolle stehen sollen. Anders als bei Versionshaltungssysteme wie 
+auch, welche Unterverzeichnisse und welche Dateien unter Versionskontrolle stehen sollen. Anders als bei Versionsverwaltungssystemen wie 
 Subveron müssen damit keine weiteren `.svn`-Dateien in Unterverzeichnissen angelegt werden.
 
 ## Mögliche Zustände eines Verzeichnisses/einer Datei in Git [1]:
