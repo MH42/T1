@@ -22,20 +22,20 @@ Jede getrackte Datei mit Änderungen, aber noch nicht dem Index hinzugefügt wur
 zu ändern, müssen sie gestaged werden. (In Eclipse: "Team" -> "Add to Index")
 * ![staged](staged.png) staged: 
 Jede getrackte Datei mit Änderungen, die bereits zum Index hinzugefügt wurden.
-* [partially-staged](partiallyStaged.png) partially-staged: 
+* ![partially-staged](partiallyStaged.png) partially-staged: 
 Jede getrackte Datei mit Änderungen, die bereits teilweise zum Index hinzugefügt wurden. Üblicherweise entsteht dies, 
 wenn eine Datei verändert, anschließend zum Index hinzugefügt und danach noch einmal verändert wird. Es ist also wieder ein "Add to Index" 
 erforderlich.
-* [conflicted](conflicted.png) conflicted: 
+* ![conflicted](conflicted.png) conflicted: 
 Alle Dateien, deren Änderungen nach einem Merge in Konflikt mit anderen Änderungen stehen. Diese Konflikte müssen von Hand 
 aufgelöst werden (in Eclipse: "Team" -> "Merge Tool"), weil Git nicht ermitteln kann welche der Versionen die korrekte ist. Über die 
 History (Eclipse: "Team" -> "Show in History") kann ermittelt werden, von wem die anderen Änderungen stammen um ggf. Rücksprache zu halten. 
 Nach Auflösen des Konflikts kann die Datei dem Index hinzugefügt werden. Damit wird sie nicht mehr als "conflicted" markiert sondern als 
 "staged". Ein Commit fügt die gemergte Datei dem Repository hinzu.
-* [removed](removed.png) removed:
+* ![removed](removed.png) removed:
 Verzeichnisse/Dateien, die aus dem Repository entfernt werden sollen. Hierfür gibt es zwei Möglichkeiten: 1. In Eclipse: "Team" -> "Untrack" 2. Löschen der aus dem Eclipse-Workspace (einfach Datei über Tastatur oder Kontextmenü entfernen). Hier erscheint das Icon jedoch nicht da die Datei nicht mehr im Workspace existiert. Beim nächsten Commit wird die jeweilige Datei aber dennoch gelöscht. Dies ist auch in der Staging-Area in der Eclipse-Staging-View einzusehen.
 Any file that should be removed from the repository. For this icon to appear Team => Untrack has to be performed. By deleting the file from the workspace, the file will disappear (and therefore no icon will appear). However, it will still be removed from the repository with the next commit.
-* [ignored](ignored.png) ignored: 
+* ![ignored](ignored.png) ignored: 
 Manche Verzeichnisse/Dateien sollen nicht zum Repository hinzugefügt werden (Beispiel: `bin`-Verzeichnis von Eclipse). Diese 
 Dateien können von der Versionskontrolle ausgeschlossen werden. Sie werden dazu in einer separaten Datei `.gitignore` gelistet und von Git 
 als nicht existent behandelt. (In Eclipse: "Team" -> "Ignore")
@@ -48,7 +48,7 @@ Mit dem Hinzufügen einer Datei zum Index ändert sich ihr Status von „Veränd
 werden. Die veränderte Datei kann mit der gestagten Datei verglichen werden, ohne dass ein Commit nötig wäre. Die veränderte Datei kann 
 wieder auf den Stand der gestagten Datei zurückgesetzt werden. Ebenso kann der Index zurückgesetzt werden.
 
-File-Menü-Übersicht in Eclipse [3]
+## File-Menü-Übersicht in Eclipse [3]
 * Add to Index:
 Hinzufügen von Dateien zum Git Index.
 „Team“ –> „Add to Index“
@@ -77,6 +77,7 @@ Zusammenführen von unterschiedlichen Versionen einer Datei, die in Konflikt zue
 „Team“ -> „Merge Tool“
 
 ## Use Case: Bearbeiten eines neuen Defects/Requirements
+![Branching Model [4]](gitflow.gif)
 1.	Wechsle in den Development-Branch über „Team“ -> „Switch“ -> „Development“
 2.	Lege (ausgehend vom Development-Branch) einen neuen Feature-Branch an: „Team“ -> „Switch to“ -> „New Branch“ -> Benenne den neuen Branch nach dem Defect/Requirement.
 3.	Implementierung
@@ -114,3 +115,4 @@ Falls es sich bei dem Defect um einen Hotfix handelt, muss der Branch in 2. vom 
    [2] Scott Chacon and Ben Straub: Pro Git. Apress 2014, 2nd Edition.   
    [3] Lars Vogel: Git version control with Eclipse (EGit) - Tutorial. http://www.vogella.com/tutorials/EclipseGit/article.html. 06.07.2016. 
 [Stand: 03.04.2017]   
+   [4] Vincent Driessen: Branching Model. http://nvie.com/posts/a-successful-git-branching-model/. January 05, 2010 [Stand: 03.04.2017]   
