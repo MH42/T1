@@ -35,7 +35,7 @@ Nach Auflösen des Konflikts kann die Datei dem Index hinzugefügt werden. Damit
 * ![removed](removed.png) removed:
 Verzeichnisse/Dateien, die aus dem Repository entfernt werden sollen. Hierfür gibt es zwei Möglichkeiten: 
    1. In Eclipse: "Team" -> "Untrack" 
-   2. Löschen der aus dem Eclipse-Workspace (einfach Datei über Tastatur oder Kontextmenü entfernen). Hier erscheint das Icon jedoch nicht da die Datei nicht mehr im Workspace existiert. Beim nächsten Commit wird die jeweilige Datei aber dennoch gelöscht. Dies ist auch in der Staging-Area in der Eclipse-Staging-View einzusehen.
+   2. Löschen der Datei aus dem Eclipse-Workspace (einfach Datei über Tastatur oder Kontextmenü entfernen). Hier erscheint das Icon jedoch nicht da die Datei nicht mehr im Workspace existiert. Beim nächsten Commit wird die jeweilige Datei aber dennoch gelöscht. Dies ist auch in der Staging-Area in der Eclipse-Staging-View einzusehen.
 * ![ignored](ignored.png) ignored: 
 Manche Verzeichnisse/Dateien sollen nicht zum Repository hinzugefügt werden (Beispiel: `bin`-Verzeichnis von Eclipse). Diese 
 Dateien können von der Versionskontrolle ausgeschlossen werden. Sie werden dazu in einer separaten Datei `.gitignore` gelistet und von Git 
