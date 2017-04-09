@@ -78,6 +78,8 @@ Zusammenführen von unterschiedlichen Versionen einer Datei, die in Konflikt zue
 
 ## Use Case: Bearbeiten eines neuen Defects/Requirements
 ![Branching Model [4]](gitflow.gif)
+Branching Model [4]
+
 1.	Wechsle in den Development-Branch über „Team“ -> „Switch“ -> „Development“
 2.	Lege (ausgehend vom Development-Branch) einen neuen Feature-Branch an: „Team“ -> „Switch to“ -> „New Branch“ -> Benenne den neuen Branch nach dem Defect/Requirement.
 3.	Implementierung
