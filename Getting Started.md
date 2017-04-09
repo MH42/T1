@@ -22,7 +22,7 @@ Jede getrackte Datei mit Änderungen, aber noch nicht dem Index hinzugefügt wur
 zu ändern, müssen sie gestaged werden. (In Eclipse: "Team" -> "Add to Index")
 * ![staged](staged.png) staged: 
 Jede getrackte Datei mit Änderungen, die bereits zum Index hinzugefügt wurden.
-* [partially-staged](partially-staged.png) partially-staged: 
+* [partially-staged](partiallyStaged.png) partially-staged: 
 Jede getrackte Datei mit Änderungen, die bereits teilweise zum Index hinzugefügt wurden. Üblicherweise entsteht dies, 
 wenn eine Datei verändert, anschließend zum Index hinzugefügt und danach noch einmal verändert wird. Es ist also wieder ein "Add to Index" 
 erforderlich.
