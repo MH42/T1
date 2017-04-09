@@ -52,30 +52,30 @@ wieder auf den Stand der gestagten Datei zurückgesetzt werden. Ebenso kann der 
 ## File-Menü-Übersicht in Eclipse [3]
 * Add to Index:
 Hinzufügen von Dateien zum Git Index.
-„Team“ –> „Add to Index“
+(„Team“ –> „Add to Index“)
 * Commit:
 Erzeugen eines neuen Commits.
-„Team“ -> „Commit...“
+(„Team“ -> „Commit...“)
 * Ignore:
 Ausschließen einer Datei von der Versionskontrolle durch Hinzufügen zur .gitignore-Datei.
-„Team“ -> „Ignore“
+(„Team“ -> „Ignore“)
 * Pull:
 Änderungen vom remote Repository ins lokale Repository auschecken. Entspricht der Kombination aus „Fetch“ und „Merge“ mit teilweise etwas zusätzlicher „Magie“. Das Ausführend eines Fetch-Commands und eines anschließendes Merge-Commands ist leichter nachvollziehbar.
-„Team“ -> „Pull“
+(„Team“ -> „Pull“)
 * Fetch:
 Update der Branches im remote Repository.
-„Team“ –> „Fetch from Upstream“
+(„Team“ –> „Fetch from Upstream“)
 * Switch:
 Erzeugen eines neuen Branchs oder wechseln zu einem anderen, bereits existierenden Branch
-„Team“ -> „Switch To“
+(„Team“ -> „Switch To“)
 * Push:
 Übertragen der Änderungen/Commits aus dem lokalen Repository ins remote Repository.
-„Team“ -> „Push to Upstream“
+(„Team“ -> „Push to Upstream“)
 * Merge:
 Mergen zweier Branches, um Dateiänderungen aus einem Branch in einen anderen Branch zu übertragen.
-„Team“ -> „Merge...“
+(„Team“ -> „Merge...“)
 Zusammenführen von unterschiedlichen Versionen einer Datei, die in Konflikt zueinander stehen.
-„Team“ -> „Merge Tool“
+(„Team“ -> „Merge Tool“)
 
 ## Use Case: Bearbeiten eines neuen Defects/Requirements
 ![Branching Model [4]](gitflow.gif)
@@ -103,7 +103,7 @@ Es kann nun evtl. zu Merge-Konflikten kommen. Falls keine Merge-Knflikte auftret
 Falls es sich bei dem Defect um einen Hotfix handelt, muss der Branch in 2. vom master-Branch aus durchgeführt werden. In 6. und 7. wird mit dem master-Branch anstatt mit dem Development-Branch gearbeitet. Am Ende (14.) muss der Defect sowohl in den master-Branch, als auch in den Feature-Branch gemerged werden.
 
 ## Use Case: Mergen zweier Branches [3]
-*	Checken den Branch A aus, in den ein anderer Branch B gemergt werden soll. Dazu: „Team“ -> „Switch Branch“
+*	Checke den Branch A aus, in den ein anderer Branch B gemergt werden soll. Dazu: „Team“ -> „Switch Branch“
 *	Starte den Merge-Dialog mit „Team“ -> „Merge...“
 *	Wähle den Branch B aus, dessen Änderungen in den aktuellen Branch A gemerged werden sollen.
 *	Selektiere in den Merge options „Commit“.
